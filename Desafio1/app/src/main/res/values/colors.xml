@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="primary_text">#000000</color>
+        <color name="error_text">#FF0000</color>
+        <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
+        <color name="background_color">#F5F5F5</color>
+        <color name="button_color">#6200EE</color>
+        <color name="button_text_color">#FFFFFF</color>
+        <color name="card_background">#FFFFFF</color>
+        <color name="dialog_background">#FFFFFF</color>
+        <color name="dialog_border">#DDDDDD</color>
+        <color name="text_color">#000000</color>
+        <color name="red">#FF0000</color>
+        <color name="colorAccent">#FF4081</color>
+</resources>

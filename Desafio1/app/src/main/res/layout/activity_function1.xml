@@ -1,0 +1,94 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Estudiante"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etNota1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 1 (15%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 2 (15%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNota3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 3 (20%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNota4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 4 (25%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etNota5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nota 5 (25%)"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calcular Promedio"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewInputs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        tools:ignore="UnknownIdInLayout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
